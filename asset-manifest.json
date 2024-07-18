@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/visual-designer/static/css/main.7da09b97.css",
+    "main.js": "/visual-designer/static/js/main.149e20f3.js",
+    "index.html": "/visual-designer/index.html",
+    "main.7da09b97.css.map": "/visual-designer/static/css/main.7da09b97.css.map",
+    "main.149e20f3.js.map": "/visual-designer/static/js/main.149e20f3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7da09b97.css",
+    "static/js/main.149e20f3.js"
+  ]
+}
