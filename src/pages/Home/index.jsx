@@ -291,9 +291,10 @@ const Home = () => {
                                         <img src={testiItem.textiImage} alt="testimonial images" className='w-[50px] h-[50px] object-cover' />
                                     </figure>
                                     <div>
-                                        <h6 key={index} className='flex gap-[6px]'>{
-                                            testiItem.testiRating.map((star, index) => (
-                                                <img src={star} alt='star image' />
+                                        <h6 key={index} className='flex gap-[6px]'>
+                                        {
+                                            testiItem.testiRating.map((starIcon, index) => (
+                                                <img src={starIcon} alt='star image' />
                                             ))
                                         }
                                         </h6>
