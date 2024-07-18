@@ -7,7 +7,7 @@ import 'swiper/css';                                    // Swiper CSS
 import HeroTitle from '../../components/HeroTitle';     // Banner Title Component
 
 
-// Brand Slider Start 
+// Brand Slider start 
 const brandImage = [
     {
         imagePath: './images/brandimg1.webp',
@@ -37,7 +37,7 @@ const brandImage = [
 ]
 // Brand Slider END 
 
-// Design Section Start
+// Design Section start
 const designCard = [
     {
         designImage: './images/designimg1.webp',
@@ -57,7 +57,7 @@ const designCard = [
 ]
 // Design Section END 
 
-// Latest Work Section Start 
+// Latest Work Section start 
 const latestWrok = [
     {
         workImage: './images/workimg1.webp',
@@ -93,47 +93,47 @@ const latestWrok = [
 
 // Latest Work Section END  
 
-// Testimonial Section Start 
+// Testimonial Section start 
 const testiCard = [
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
         textiImage: './images/testiimg1.webp',
-        testiRating: ['./images/Star.svg', './images/Star.svg', './images/Star.svg', './images/Star.svg', './images/Star.svg'],
+        testiRating: ['./images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     },
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
         textiImage: './images/testiimg1.webp',
-        testiRating: ['./images/Star.svg', './images/Star.svg', './images/Star.svg', './images/Star.svg', './images/Star.svg'],
+        testiRating: ['./images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     },
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
         textiImage: './images/testiimg1.webp',
-        testiRating: ['./images/Star.svg', './images/Star.svg', './images/Star.svg', './images/Star.svg', './images/Star.svg'],
+        testiRating: ['./images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     },
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
         textiImage: './images/testiimg1.webp',
-        testiRating: ['./images/Star.svg', './images/Star.svg', './images/Star.svg', './images/Star.svg', './images/Star.svg'],
+        testiRating: ['./images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     },
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
         textiImage: './images/testiimg1.webp',
-        testiRating: ['./images/Star.svg', './images/Star.svg', './images/Star.svg', './images/Star.svg', './images/Star.svg'],
+        testiRating: ['./images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     },
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
         textiImage: './images/testiimg1.webp',
-        testiRating: ['./images/Star.svg', './images/Star.svg', './images/Star.svg', './images/Star.svg', './images/Star.svg'],
+        testiRating: ['./images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     }
@@ -141,7 +141,7 @@ const testiCard = [
 // Testimonial Section END  
 
 const Home = () => {
-    // OnClick Image Box Open Start 
+    // OnClick Image Box Open start 
     // const [showImg, setShowImg] = useState('none')
     // const open = () => {
     //     setShowImg(!showImg)
@@ -153,7 +153,7 @@ const Home = () => {
     // OnClick Image Box Open END 
     return (
         <div>
-            {/* //    HeroBAnner STart */}
+            {/* //    HeroBAnner start */}
             <Swiper
                 centeredSlides={true}
                 loop={true}
@@ -187,7 +187,7 @@ const Home = () => {
             </Swiper>
             {/* // HeroBanner END */}
 
-            {/* Brand Section Start  */}
+            {/* Brand Section start  */}
             <Swiper
                 slidesPerView={1}
                 spaceBetween={50}
@@ -220,7 +220,7 @@ const Home = () => {
             </Swiper>
             {/* Brand Section End  */}
 
-            {/* Design Section Start  */}
+            {/* Design Section start  */}
             <section class="grid md:grid-flow-col md:auto-cols-fr max-w-[1280px] mx-auto px-6 lg:px-0 my-[108px]">
                 {
                     designCard.map((cardItem, index) => (
@@ -236,7 +236,7 @@ const Home = () => {
             </section>
             {/* Design Section ENd  */}
 
-            {/* Latest Work Section Start  */}
+            {/* Latest Work Section start  */}
             <section class=" max-w-[1280px] mx-auto px-6 lg:px-6">
                 <h2 className='text-[32px] font-semibold text-center my-[42px]'>Latest work</h2>
                 <div className='grid md:grid-cols-3  gap-6 mb-[42px]'>
@@ -252,7 +252,7 @@ const Home = () => {
                         ))
                     }
                 </div>
-                {/* Image MOdal Start  */}
+                {/* Image MOdal start  */}
                 {showModal ? (
                     <>
                         <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
@@ -278,7 +278,7 @@ const Home = () => {
             </section>
             {/* Latest Work Section END  */}
 
-            {/* Testimonial Section Start  */}
+            {/* Testimonial Section start  */}
             <section class=" max-w-[1280px] mx-auto px-6 lg:px-6 mt-[84px] mb-[42px]">
                 <h2 className='text-[32px] font-semibold text-center my-[42px]'>Testimonial</h2>
                 <div className='grid md:grid-cols-3 gap-6'>
