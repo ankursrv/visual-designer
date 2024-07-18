@@ -167,7 +167,7 @@ const Home = () => {
                 <SwiperSlide>
                     <div class="md:columns-2 flex flex-col md:flex-row text-black justify-between px-6 lg:px-0 mt-[42px]">
                         <HeroTitle
-                            title="Branding | Image making"
+                            title="Branding | "
                             heading="Visual Designer"
                             paragraph="This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com"
                             image="/images/heroimg.webp"
