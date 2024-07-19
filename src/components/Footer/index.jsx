@@ -7,13 +7,7 @@ const Footer = () => {
         e.preventDefault();
         toast.success("You are successfully logged in");
     }
-    const socialIcon = [
-        './images/discord.svg',
-        './images/facebook.svg',
-        './images/dribble.svg',
-        './images/insta.svg',
-        './images/behance.svg'
-    ]
+    const socialIcon = ['discord.svg', 'facebook.svg', 'dribble.svg', 'insta.svg', 'behance.svg']
     return (
         <footer class=" max-w-[1280px] mx-auto px-6 lg:px-6 my-[84px]">
             <h2 className="text-[32px] font-semibold text-black leading-[42px]">Lets work together</h2>
@@ -27,7 +21,7 @@ const Footer = () => {
                     <figure className="flex gap-6">
                         {
                             socialIcon.map((icon, index) => (
-                                <img src={icon} alt="social icon image" />
+                                <img src={`./images/${icon}`} alt="social icon image" />
                             ))
                         }
                     </figure>
