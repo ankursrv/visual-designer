@@ -98,42 +98,42 @@ const testiCard = [
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
         textiImage: './images/testiimg1.webp',
-        testiRating: ['./images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg'],
+        testiRating: ['star.svg', 'star.svg', 'star.svg', 'star.svg', 'star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     },
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
         textiImage: './images/testiimg1.webp',
-        testiRating: ['./images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg'],
+        testiRating: ['star.svg', 'star.svg', 'star.svg', 'star.svg', 'star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     },
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
         textiImage: './images/testiimg1.webp',
-        testiRating: ['./images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg'],
+        testiRating: ['star.svg', 'star.svg', 'star.svg', 'star.svg', 'star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     },
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
         textiImage: './images/testiimg1.webp',
-        testiRating: ['./images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg'],
+        testiRating: ['star.svg', 'star.svg', 'star.svg', 'star.svg', 'star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     },
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
         textiImage: './images/testiimg1.webp',
-        testiRating: ['./images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg'],
+        testiRating: ['star.svg', 'star.svg', 'star.svg', 'star.svg', 'star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     },
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
         textiImage: './images/testiimg1.webp',
-        testiRating: ['./images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg', './images/star.svg'],
+        testiRating: ['star.svg', 'star.svg', 'star.svg', 'star.svg', 'star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     }
@@ -294,7 +294,7 @@ const Home = () => {
                                         <h6 key={index} className='flex gap-[6px]'>
                                         {
                                             testiItem.testiRating.map((starIcon, index) => (
-                                                <img src={starIcon} alt='star image' />
+                                                <img src={`./images/${starIcon}`} alt='star image' />
                                             ))
                                         }
                                         </h6>

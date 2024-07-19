@@ -1,3 +1,4 @@
+import { useState } from "react"
 
 
 const recipes = [
@@ -19,6 +20,7 @@ const recipes = [
 ]
 
 function About() {
+    const [open, setOpen] = useState(true)
     return (
         <>
             {
@@ -26,7 +28,7 @@ function About() {
                     <div>
                         <h1>{recipeItem.id}</h1>
                         <p>{recipeItem.title}</p>
-                        <p><img src={recipeItem.image} /></p>
+                        <p><img src={recipeItem.image} className="w-8" /></p>
                         {
                             recipeItem.dishTypes.map((dish, index) => (
                                 <h3>{dish}</h3>
@@ -36,9 +38,14 @@ function About() {
                 ))
             }
 
-            <div className="mt-12">
-            <h1 className="mt-9 text-5xl text-bold">margin top</h1>
+            {/* MOdal Start */}
+            <div className="">
+            <div className="absolute w-full h-full bg-green top-0 left-auto"></div>
+
             </div>
+            {/* MOdal END  */}
+
+
         </>
     )
 }
