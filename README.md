@@ -8,3 +8,5 @@
 8. Backtic use in footer social icon and testimonial star icon 
 
 https://visual-designer-xi.vercel.app/
+
+9. About Page Create Modal
