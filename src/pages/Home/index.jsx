@@ -6,6 +6,22 @@ import 'swiper/css';                                    // Swiper CSS
 
 import HeroTitle from '../../components/HeroTitle';     // Banner Title Component
 
+// Hero Banner start 
+const heroSlider = [
+    {
+        title: "Branding | Image making",
+        heading: "Visual Designer",
+        paragraph: "This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com",
+        image: "/images/heroimg.webp"
+    },
+    {
+        title: "Branding | Image making",
+        heading: "UX/UI Designer",
+        paragraph: "This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com",
+        image: "/images/heroimg.webp"
+    }
+]
+// Hero Banner END  
 
 // Brand Slider start 
 const brandImage = [
@@ -164,26 +180,20 @@ const Home = () => {
                 modules={[Autoplay]}
                 className=" max-w-[1280px] font-epilogue"
             >
-                <SwiperSlide>
-                    <div class="md:columns-2 flex flex-col md:flex-row text-black justify-between px-6 lg:px-0 mt-[42px]">
-                        <HeroTitle
-                            title="Branding | Image making"
-                            heading="Visual Designer"
-                            paragraph="This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com"
-                            image="/images/heroimg.webp"
-                        />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div class="md:columns-2 flex flex-col md:flex-row text-black justify-between px-6 lg:px-0 mt-[42px]">
-                        <HeroTitle
-                            title="Branding | Image making"
-                            heading="UX/UI Designer"
-                            paragraph="This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com"
-                            image="/images/heroimg.webp"
-                        />
-                    </div>
-                </SwiperSlide>
+                {
+                    heroSlider.map((heroContent, index) => (
+                        <SwiperSlide key={index}>
+                            <div class="md:columns-2 flex flex-col md:flex-row text-black justify-between px-6 lg:px-0 mt-[42px]">
+                                <HeroTitle
+                                    title={heroContent.title}
+                                    heading={heroContent.heading}
+                                    paragraph={heroContent.paragraph}
+                                    image={heroContent.image}
+                                />
+                            </div>
+                        </SwiperSlide>
+                    ))
+                }
             </Swiper>
             {/* // HeroBanner END */}
 
@@ -292,11 +302,11 @@ const Home = () => {
                                     </figure>
                                     <div>
                                         <h6 key={index} className='flex gap-[6px]'>
-                                        {
-                                            testiItem.testiRating.map((starIcon, index) => (
-                                                <img src={`./images/${starIcon}`} alt='star image' />
-                                            ))
-                                        }
+                                            {
+                                                testiItem.testiRating.map((starIcon, index) => (
+                                                    <img src={`./images/${starIcon}`} alt='star image' />
+                                                ))
+                                            }
                                         </h6>
                                         <h4 className='text-xl font-semibold mt-2'>{testiItem.testiName}</h4>
                                         <p className='text-[17px] font-normal'>{testiItem.testiBrand}</p>
