@@ -281,7 +281,7 @@ const Home = () => {
             {/* Latest Work Section END  */}
 
             {/* Testimonial Section start  */}
-            <section class=" max-w-[1280px] mx-auto px-6 lg:px-6 mt-[84px] mb-[42px]">
+            <section class=" max-w-[1280px] mx-auto px-6 lg:px-6 mt-[84px] mb-[42px]" id='testimonial'>
                 <h2 className='text-[32px] font-semibold text-center my-[42px]'>Testimonial</h2>
                 <div className='grid md:grid-cols-3 gap-6'>
                     {

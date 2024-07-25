@@ -9,7 +9,7 @@ const Footer = () => {
     }
     const socialIcon = ['discord.svg', 'facebook.svg', 'dribble.svg', 'insta.svg', 'behance.svg']
     return (
-        <footer class=" max-w-[1280px] mx-auto px-6 lg:px-6 my-[84px]">
+        <footer class=" max-w-[1280px] mx-auto px-6 lg:px-6 my-[84px]" id="footer">
             <h2 className="text-[32px] font-semibold text-black leading-[42px]">Lets work together</h2>
             <div className="grid md:grid-cols-2 mt-6">
                 <div>
