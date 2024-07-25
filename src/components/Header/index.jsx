@@ -12,6 +12,10 @@ const navItems = [
     {
         link: 'Contact',
         href: '/contact'
+    },
+    {
+        link: 'NotFound',
+        href: '/notfound'
     }
 ]
 const Header = () => {

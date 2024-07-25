@@ -157,14 +157,6 @@ const testiCard = [
 // Testimonial Section END  
 
 const Home = () => {
-    // OnClick Image Box Open start 
-    // const [showImg, setShowImg] = useState('none')
-    // const open = () => {
-    //     setShowImg(!showImg)
-    // }
-    // const close = () => {
-    //     setShowImg(!showImg)
-    // }
     const [showModal, setShowModal] = useState(false);
     // OnClick Image Box Open END 
     return (
