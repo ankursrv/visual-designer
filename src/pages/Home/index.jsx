@@ -5,6 +5,7 @@ import { Autoplay } from 'swiper/modules';              // Swiper Autoplay
 import 'swiper/css';                                    // Swiper CSS
 
 import HeroTitle from '../../components/HeroTitle';     // Banner Title Component
+import StarRating from '../../components/StarRating';   // Star Rating Component
 
 // Hero Banner start 
 const heroSlider = [
@@ -114,42 +115,36 @@ const testiCard = [
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
         textiImage: 'testiimg1.webp',
-        testiRating: ['star.svg', 'star.svg', 'star.svg', 'star.svg', 'star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     },
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
         textiImage: 'testiimg1.webp',
-        testiRating: ['star.svg', 'star.svg', 'star.svg', 'star.svg', 'star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     },
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
         textiImage: 'testiimg1.webp',
-        testiRating: ['star.svg', 'star.svg', 'star.svg', 'star.svg', 'star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     },
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
         textiImage: 'testiimg1.webp',
-        testiRating: ['star.svg', 'star.svg', 'star.svg', 'star.svg', 'star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     },
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
         textiImage: 'testiimg1.webp',
-        testiRating: ['star.svg', 'star.svg', 'star.svg', 'star.svg', 'star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     },
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
         textiImage: 'testiimg1.webp',
-        testiRating: ['star.svg', 'star.svg', 'star.svg', 'star.svg', 'star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     }
@@ -158,7 +153,7 @@ const testiCard = [
 
 const Home = () => {
     const [showModal, setShowModal] = useState(false);  // Latest Work section Modal
-    // OnClick Image Box Open END 
+
     return (
         <div>
             {/* //    HeroBAnner start */}
@@ -293,13 +288,14 @@ const Home = () => {
                                         <img src={`./images/${testiItem.textiImage}`} alt="testimonial images" className='w-[50px] h-[50px] object-cover' />
                                     </figure>
                                     <div>
-                                        <h6 className='flex gap-[6px]'>
+                                    <StarRating totalStars = {5} />
+                                        {/* <h6 className='flex gap-[6px]'>
                                             {
                                                 testiItem.testiRating.map((starIcon, index) => (
                                                     <img key={index} src={`./images/${starIcon}`} alt='star image' />
                                                 ))
                                             }
-                                        </h6>
+                                        </h6> */}
                                         <h4 className='text-xl font-semibold mt-2'>{testiItem.testiName}</h4>
                                         <p className='text-[17px] font-normal'>{testiItem.testiBrand}</p>
                                     </div>
@@ -307,6 +303,7 @@ const Home = () => {
                             </div>
                         ))
                     }
+                    
                 </div>
             </section>
             {/* Testimonial Section END  */}
