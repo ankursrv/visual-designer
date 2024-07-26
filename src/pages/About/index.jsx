@@ -27,7 +27,7 @@ function About() {
         <>
             {
                 recipes.map((recipeItem, index) => (
-                    <div>
+                    <div key={index}>
                         <h1>{recipeItem.id}</h1>
                         <p>{recipeItem.title}</p>
                         <p onClick={() => setOpen(true)} className="flex items-center">      {/***** //MOdal *****/}
@@ -36,7 +36,7 @@ function About() {
                         </p>
                         {
                             recipeItem.dishTypes.map((dish, index) => (
-                                <h3>{dish}</h3>
+                                <h3 key={index}>{dish}</h3>
                             ))
                         }
                     </div>

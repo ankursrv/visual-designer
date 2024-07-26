@@ -25,28 +25,28 @@ const heroSlider = [
 
 // Brand Slider start 
 const brandImage = [
-    {
-        imagePath: './images/brandimg1.webp',
+    {   
+        imageBrand: 'brandimg1.webp',
         altText: 'brand image',
     },
     {
-        imagePath: './images/brandimg2.webp',
+        imageBrand: 'brandimg2.webp',
         altText: 'brand image',
     },
     {
-        imagePath: './images/brandimg3.webp',
+        imageBrand: 'brandimg3.webp',
         altText: 'brand image',
     },
     {
-        imagePath: './images/brandimg4.webp',
+        imageBrand: 'brandimg4.webp',
         altText: 'brand image',
     },
     {
-        imagePath: './images/brandimg5.webp',
+        imageBrand: 'brandimg5.webp',
         altText: 'brand image',
     },
     {
-        imagePath: './images/brandimg1.webp',
+        imageBrand: 'brandimg1.webp',
         altText: 'brand image',
     }
 
@@ -56,17 +56,17 @@ const brandImage = [
 // Design Section start
 const designCard = [
     {
-        designImage: './images/designimg1.webp',
+        designImage: 'designimg1.webp',
         designTitle: 'Product Design',
         designDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com'
     },
     {
-        designImage: './images/designimg2.webp',
+        designImage: 'designimg2.webp',
         designTitle: 'Visual Design',
         designDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com'
     },
     {
-        designImage: './images/designimg3.webp',
+        designImage: 'designimg3.webp',
         designTitle: 'Art Direction',
         designDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com'
     }
@@ -76,32 +76,32 @@ const designCard = [
 // Latest Work Section start 
 const latestWrok = [
     {
-        workImage: './images/workimg1.webp',
+        workImage: 'workimg1.webp',
         workTitle: 'Project title',
         workDepartment: 'UI, Art drection'
     },
     {
-        workImage: './images/workimg2.webp',
+        workImage: 'workimg2.webp',
         workTitle: 'Project title',
         workDepartment: 'UI, Art drection'
     },
     {
-        workImage: './images/workimg3.webp',
+        workImage: 'workimg3.webp',
         workTitle: 'Project title',
         workDepartment: 'UI, Art drection'
     },
     {
-        workImage: './images/workimg4.webp',
+        workImage: 'workimg4.webp',
         workTitle: 'Project title',
         workDepartment: 'UI, Art drection'
     },
     {
-        workImage: './images/workimg5.webp',
+        workImage: 'workimg5.webp',
         workTitle: 'Project title',
         workDepartment: 'UI, Art drection'
     },
     {
-        workImage: './images/workimg6.webp',
+        workImage: 'workimg6.webp',
         workTitle: 'Project title',
         workDepartment: 'UI, Art drection'
     }
@@ -113,42 +113,42 @@ const latestWrok = [
 const testiCard = [
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
-        textiImage: './images/testiimg1.webp',
+        textiImage: 'testiimg1.webp',
         testiRating: ['star.svg', 'star.svg', 'star.svg', 'star.svg', 'star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     },
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
-        textiImage: './images/testiimg1.webp',
+        textiImage: 'testiimg1.webp',
         testiRating: ['star.svg', 'star.svg', 'star.svg', 'star.svg', 'star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     },
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
-        textiImage: './images/testiimg1.webp',
+        textiImage: 'testiimg1.webp',
         testiRating: ['star.svg', 'star.svg', 'star.svg', 'star.svg', 'star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     },
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
-        textiImage: './images/testiimg1.webp',
+        textiImage: 'testiimg1.webp',
         testiRating: ['star.svg', 'star.svg', 'star.svg', 'star.svg', 'star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     },
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
-        textiImage: './images/testiimg1.webp',
+        textiImage: 'testiimg1.webp',
         testiRating: ['star.svg', 'star.svg', 'star.svg', 'star.svg', 'star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
     },
     {
         testiDiscription: 'This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com',
-        textiImage: './images/testiimg1.webp',
+        textiImage: 'testiimg1.webp',
         testiRating: ['star.svg', 'star.svg', 'star.svg', 'star.svg', 'star.svg'],
         testiName: 'Gemma Nolen',
         testiBrand: 'Google'
@@ -157,7 +157,7 @@ const testiCard = [
 // Testimonial Section END  
 
 const Home = () => {
-    const [showModal, setShowModal] = useState(false);
+    const [showModal, setShowModal] = useState(false);  // Latest Work section Modal
     // OnClick Image Box Open END 
     return (
         <div>
@@ -215,7 +215,7 @@ const Home = () => {
                 {
                     brandImage.map((imageItem, index) => (
                         <SwiperSlide key={index} className="!flex items-center justify-center">
-                            <img src={imageItem.imagePath} alt={imageItem.altText} />
+                            <img src={`./images/${imageItem.imageBrand}`} alt={imageItem.altText} />
                         </SwiperSlide>
                     ))
                 }
@@ -227,7 +227,7 @@ const Home = () => {
                 {
                     designCard.map((cardItem, index) => (
                         <div key={index} className='max-w-[394px] flex flex-col gap-[42px] items-center justify-center text-center text-black'>
-                            <img src={cardItem.designImage} alt="design images" className='w-[124px] h-[124px] object-cover' />
+                            <img src={`./images/${cardItem.designImage}`} alt="design images" className='w-[124px] h-[124px] object-cover' />
                             <div>
                                 <h4 className='text-[27px] font-semibold'>{cardItem.designTitle}</h4>
                                 <p className='text-[17px] font-normal leading-7 mt-3 px-12'>{cardItem.designDiscription}</p>
@@ -245,7 +245,7 @@ const Home = () => {
                     {
                         latestWrok.map((wrokItem, index) => (
                             <div key={index} className='text-black cursor-pointer' onClick={() => setShowModal(true)}>
-                                <img src={wrokItem.workImage} alt="design images" className='w-[395px] h-[330px] object-cover' />
+                                <img src={`./images/${wrokItem.workImage}`} alt="design images" className='w-[395px] h-[330px] object-cover' />
                                 <div>
                                     <h4 className='text-xl font-semibold mt-6'>{wrokItem.workTitle}</h4>
                                     <p className='text-[17px] font-normal mt-2'>{wrokItem.workDepartment}</p>
@@ -290,13 +290,13 @@ const Home = () => {
                                 <p className='font-semibold text-xl leading-[30px]'>{testiItem.testiDiscription}</p>
                                 <div className='flex gap-4'>
                                     <figure>
-                                        <img src={testiItem.textiImage} alt="testimonial images" className='w-[50px] h-[50px] object-cover' />
+                                        <img src={`./images/${testiItem.textiImage}`} alt="testimonial images" className='w-[50px] h-[50px] object-cover' />
                                     </figure>
                                     <div>
-                                        <h6 key={index} className='flex gap-[6px]'>
+                                        <h6 className='flex gap-[6px]'>
                                             {
                                                 testiItem.testiRating.map((starIcon, index) => (
-                                                    <img src={`./images/${starIcon}`} alt='star image' />
+                                                    <img key={index} src={`./images/${starIcon}`} alt='star image' />
                                                 ))
                                             }
                                         </h6>
