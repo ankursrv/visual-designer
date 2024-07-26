@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
 import Button from "../Button"
 
-const scrollToSection = () => {
+const scrollToSection = () => {     // Smooth Scroll Start
     document.getElementById("testimonial").scrollIntoView({ behavior: "smooth" });
-}
+}                                   // ENd
 
 const HeroTitle = ({ title, heading, paragraph, image }) => {
     return (
